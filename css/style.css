@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap');
 
 
+
+/* COLOR PALETTE */
 :root {
   --main-bg-color: #F5F5F5;
   --gold:  #DFA549;
@@ -10,8 +12,56 @@
   --navy:  #142D34;
 }
 
+/* GLOBAL STYLING  */
+
 body {
   margin: 0 !important; 
   background: var(--main-bg-color);
   font-family: 'Quattrocento', serif;
+  position: relative;
+}
+
+/* NAVIGATION */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 85px;
+  display:  flex;
+  z-index: 1000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+nav img {
+  width: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+nav p {
+  font-weight: 700;
+}
+
+nav p a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: 1s all;
+}
+
+nav p a:hover {
+  color: var(--red);
+  transition: 1s all;
+}
+
+/* WORK */
+
+div.work-wrapper {
+  margin-top: 100px;
+}
+
+div.hero {
+  height: 200vh;
 }
