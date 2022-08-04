@@ -59,6 +59,7 @@ nav p a:hover {
 
 
 /* WORK GRID */
+
 div.work {
   width: 80%;
   max-width: 1200px;
@@ -191,11 +192,18 @@ div.work-expanded div.wrapper img {
 }
 
 
+
 /* MOBILE STYLING */
+
 @media only screen and (max-width: 900px) {
   div.work {
     width: 90%;
   }
+
+  div.work-exapnded {
+    width: 90%;
+  }
+
   div.row.two {
     display: block;
   }
