@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+
     // show project name on hover
 
     $( "div.row a" ).hover(
@@ -14,7 +14,7 @@ $( document ).ready(function() {
       }
     );
 
-    // 
+    // show and hide the expanded views
     $( "div.row a" ).each(function() {
         $(this).click(function() {
             var getClass = this.className.toString();
@@ -26,7 +26,6 @@ $( document ).ready(function() {
 
     $( "p.back" ).each(function() {
         $(this).click(function() {
-            $("body").removeClass('shortened');
             $("div.work-expanded").removeClass("show");
             $("div.work").removeClass("hide");
         });

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 
@@ -19,6 +19,34 @@ body {
   background: var(--main-bg-color);
   font-family: 'Quattrocento', serif;
   position: relative;
+  color: var(--navy);
+}
+
+p {
+  font-family: 'Quattrocento Sans';
+}
+
+p a {
+  text-decoration: none;
+  color:var(--teal);
+  font-weight: 900;
+  transition: 1s all;
+}
+
+p a:hover {
+  transition: 1s all;
+  border-bottom: 1px solid var(--teal);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.mobile-show {
+  display: none;
+}
+.desktop-show {
+  display: block;
 }
 
 /* NAVIGATION */
@@ -149,7 +177,28 @@ div.row.three a img {
   width: 100%;
 }
 
+/* ABOUT SECTION */
+div.about {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 200px;
+  opacity: 1;
+  z-index: 1;
+  transition: 3s all;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
 
+div.about img {
+  width: 48%;
+}
+
+div.about div.text.wrapper {
+  width: 48%;
+}
 
 /* WORK EXPANDED */
 
@@ -196,6 +245,13 @@ div.work-expanded div.wrapper img {
 /* MOBILE STYLING */
 
 @media only screen and (max-width: 900px) {
+  .mobile-show {
+    display: block;
+  }
+  .desktop-show {
+    display: none;
+  }
+
   div.work {
     width: 90%;
   }
@@ -218,7 +274,19 @@ div.work-expanded div.wrapper img {
     width: 100%;
     margin-bottom: 30px;
   }
+  div.about {
+    display: block;
+    width: 90%;
+  }
+  div.about img {
+    width: 100%;
+  }
+  div.about div.text.wrapper {
+    width: 100%;
+  }
+
 }
+
 
 /* div.hero {
   height: 200vh;
