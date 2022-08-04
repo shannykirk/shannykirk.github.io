@@ -26,7 +26,7 @@ body {
 nav {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99%;
   height: 120px;
   display:  flex;
   z-index: 1000;
@@ -37,9 +37,9 @@ nav {
 }
 
 nav img {
-  width: 180px;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 150px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 nav p {
@@ -57,11 +57,6 @@ nav p a:hover {
   transition: 1s all;
 }
 
-/* WORK */
-
-div.work-wrapper {
-  margin-top: 100px
-}
 
 /* WORK GRID */
 div.work {
@@ -70,17 +65,23 @@ div.work {
   margin: 0 auto;
   position: relative;
   margin-top: 200px;
+  opacity: 1;
+  z-index: 1;
+  transition: 3s all;
 }
 
 div.row a {
-  transition: 1s opacity;
   position: relative;
   display: block;
 }
 
-div.row a:hover {
+div.row a img {
   transition: 1s opacity;
-  opacity: 0.6;
+}
+
+div.row a:hover img {
+  transition: 1s opacity;
+  opacity: 0.8;
 }
 
 div.row a h3 {
@@ -93,6 +94,9 @@ div.row a h3 {
   font-size: 28px;
   color: var(--navy);
   width: 80%;
+  transition: 1s opacity;
+  opacity: 0;
+  z-index: 100;
 }
 
 div.row.one {
@@ -141,6 +145,48 @@ div.row.three a {
 }
 
 div.row.three a img {
+  width: 100%;
+}
+
+
+
+/* WORK EXPANDED */
+
+div.work.hide {
+  opacity: 0;
+  z-index: -1;
+  transition: 3s all;
+  display: none;
+}
+
+div.work-expanded {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 1s all;
+  background: var(--main-bg-color);
+}
+
+div.work-expanded.show {
+  opacity: 1;
+  z-index: 101;
+  transition: 1s all;
+  margin-bottom: 150px;
+}
+
+div.work-expanded div.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+
+div.work-expanded div.wrapper img {
   width: 100%;
 }
 
