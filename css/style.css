@@ -242,7 +242,7 @@ div.about {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  margin-top: 200px;
+  padding-top: 200px;
   opacity: 1;
   z-index: 1;
   transition: 3s all;
@@ -274,17 +274,9 @@ div.work-expanded {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0;
   z-index: -1;
-  transition: 1s all;
   background: var(--main-bg-color);
-}
-
-div.work-expanded.show {
-  opacity: 1;
-  z-index: 101;
-  transition: 1s all;
-  margin-bottom: 150px;
+  display: none;
 }
 
 div.work-expanded div.wrapper {
@@ -383,6 +375,7 @@ div.work-expanded div.wrapper p.back {
   color: var(--main-bg-color);
   letter-spacing: 0.25px;
   border: 1px solid var(--teal);
+  margin-top: 40px;
 }
 
 div.work-expanded div.wrapper p.back:hover {
@@ -455,6 +448,7 @@ div.work-expanded div.wrapper p.back:hover {
     width: 90%;
     margin-top: 75px;
   }
+
   div.work-expanded div.wrapper img {
     width: 110%;
     margin-left: -5%;
