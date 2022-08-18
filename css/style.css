@@ -54,7 +54,7 @@ h2 {
 nav {
   position: fixed;
   top: 0;
-  width: 99%;
+  width: 100%;
   height: 120px;
   display:  flex;
   z-index: 1000;
@@ -85,6 +85,63 @@ nav p a:hover {
   transition: 1s all;
 }
 
+/* HERO IMAGE AREA */
+div.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  background: url(https://raw.githubusercontent.com/shannykirk/shannykirk.github.io/main/images/size1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 100px;
+}
+
+div.hero div.intro-type {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 85%;
+  max-width: 650px;
+  text-align: center;
+}
+
+div.hero h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+div.hero h2 {
+  margin-bottom: 20px;
+  font-family: "Quattrocento Sans";
+  font-weight: normal;
+  font-size: 18px;
+}
+
+div.hero div.see-work-button {
+  transition: 1s all;
+  margin: 0 auto;
+  width: 140px;
+  padding: 10px;
+  background-color: var(--teal);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans";
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--main-bg-color);
+  letter-spacing: 0.25px;
+  border: 1px solid var(--teal);
+}
+
+div.hero div.see-work-button:hover {
+  color: var(--teal);
+  transition: 1s all;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 /* WORK GRID */
 
@@ -93,7 +150,7 @@ div.work {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  margin-top: 200px;
+  padding-top: 200px;
   opacity: 1;
   z-index: 1;
   transition: 3s all;
