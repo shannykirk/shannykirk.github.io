@@ -31,5 +31,13 @@ $( document ).ready(function() {
         });
     });
 
+    // scroll from hero to work
+    // can change duration by editing the number below _ 1000 = 1 secondx
+
+    $("div.see-work-button").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#work").offset().top
+        }, 1000);
+    });
 
 });
