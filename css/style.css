@@ -58,7 +58,7 @@ nav {
   width: 100%;
   height: 120px;
   display:  flex;
-  z-index: 1000;
+  z-index: 10000000;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -248,15 +248,31 @@ div.about {
   transition: 3s all;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  align-items: flex-start;
 }
 
 div.about img {
   width: 48%;
+  /* align-self: center; */
 }
 
 div.about div.text.wrapper {
   width: 48%;
+}
+
+div.about div.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+div.about div.columns div.experience, div.about div.columns div.awards {
+  width: 45%;
+}
+
+div.about div.columns h5 {
+  font-size: 21px;
 }
 
 /* WORK CASE STUDY VIEW */
@@ -385,8 +401,55 @@ div.work-expanded div.wrapper p.back:hover {
   cursor: pointer;
 }
 
+/* FOOTER SECTION */
+div.footer {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  color: var(--main-bg-color);
+  background: var(--teal);
+}
 
+div.footer div.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 650px;
+  margin-bottom: 20px;
+  padding: 0;
+}
 
+div.footer div.wrapper p {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 650px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+div.footer div.wrapper div.social {
+  display: flex;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+}
+
+div.footer div.wrapper div.social i {
+  padding: 0px 10px;
+}
+
+div.footer div.wrapper div.social a {
+  color: var(--main-bg-color);
+  opacity: 0.5;
+  transition: 1s opacity;
+}
+
+div.footer div.wrapper div.social a:hover {
+  opacity: 1;
+  transition: 1s opacity;
+  cursor: pointer;
+}
 
 
 /* MOBILE STYLING */
@@ -397,6 +460,19 @@ div.work-expanded div.wrapper p.back:hover {
   }
   .desktop-show {
     display: none;
+  }
+
+  nav {
+    height: 75px;
+  }
+
+  nav img {
+    width: auto;
+    height: 60px;
+  }
+
+  div.hero {
+    margin-top: 75px;
   }
 
   div.work {
@@ -446,7 +522,7 @@ div.work-expanded div.wrapper p.back:hover {
   }
   div.work-expanded div.wrapper {
     width: 90%;
-    margin-top: 75px;
+    margin-top: 100px;
   }
 
   div.work-expanded div.wrapper img {

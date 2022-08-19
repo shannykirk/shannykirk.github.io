@@ -23,6 +23,7 @@ $( document ).ready(function() {
             $("div.work").fadeOut(10);
             $("div.about").fadeOut(10);
             $("div.hero").fadeOut(10);
+            $("div.footer").fadeOut(10);
         });
     });
 
@@ -32,6 +33,7 @@ $( document ).ready(function() {
             $("div.work").fadeIn(1000);
             $("div.about").fadeIn(1000);
             $("div.hero").fadeIn(1000);
+            $("div.footer").fadeIn(1000);
         });
     });
 
