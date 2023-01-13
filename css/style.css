@@ -88,30 +88,39 @@ nav p a:hover {
 
 /* HERO IMAGE AREA */
 div.hero {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 100vh;
+}
+
+div.hero div.illustration {
   width: 100%;
   height: 100vh;
   min-height: 900px;
-  background: url(https://raw.githubusercontent.com/shannykirk/shannykirk.github.io/main/images/size1.png);
+  background: url(https://raw.githubusercontent.com/shannykirk/shannykirk.github.io/main/images/Untitled_Artwork%2053.png);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  position: relative;
-  margin-top: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 div.hero div.intro-type {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  left: 10%;
+  transform: translateY(-50%);
   width: 85%;
-  max-width: 650px;
-  text-align: center;
+  max-width: 500px;
+  text-align: left;
 }
 
 div.hero h1 {
   margin: 0;
   font-size: 60px;
+  font-weight: normal;
 }
 
 div.hero h2 {
@@ -123,7 +132,6 @@ div.hero h2 {
 
 div.hero div.see-work-button {
   transition: 1s all;
-  margin: 0 auto;
   width: 140px;
   padding: 10px;
   background-color: var(--teal);
@@ -135,6 +143,7 @@ div.hero div.see-work-button {
   color: var(--main-bg-color);
   letter-spacing: 0.25px;
   border: 1px solid var(--teal);
+  text-align: center;
 }
 
 div.hero div.see-work-button:hover {
@@ -451,10 +460,21 @@ div.footer div.wrapper div.social a:hover {
   cursor: pointer;
 }
 
+/* TABLET STYLING */
+
+@media only screen and (max-width: 1450px) and (min-width: 1001px) {
+  div.hero div.intro-type {
+    left: 5%;
+    max-width: 290px;
+  }
+  div.hero div.illustration {
+    background-position: 68% 50%;
+  }
+}
 
 /* MOBILE STYLING */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .mobile-show {
     display: block;
   }
@@ -473,8 +493,11 @@ div.footer div.wrapper div.social a:hover {
 
   div.hero {
     margin-top: 75px;
+    min-height: 100vh;
   }
-
+  div.hero div.see-work-button {
+    margin: 0 auto;
+  }
   div.work {
     width: 90%;
     padding-top: 120px;
@@ -508,8 +531,25 @@ div.footer div.wrapper div.social a:hover {
   div.about div.text.wrapper {
     width: 100%;
   }
-  div.hero {
-    min-height: 110vh;
+  div.hero div.intro-type {
+    position: relative;
+    transform: translateY(0);
+    left: auto;
+    margin: 0 auto;
+    top: auto;
+    padding-top: 8vh;
+    text-align: center;
+  }
+  div.hero div.illustration {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 50vh;
+    min-height: auto;
+    background-position: 85% 50%;
+    max-width: 400px;
   }
   div.hero h1 {
     font-size: 45px;
