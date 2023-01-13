@@ -57,18 +57,25 @@ nav {
   top: 0;
   width: 100%;
   height: 120px;
-  display:  flex;
   z-index: 10000000;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   background: var(--main-bg-color);
 }
 
+nav div.nav-wrapper {
+  max-width: 500px;
+  position: relative;
+  margin-left: 10%;
+  height: 100%;
+}
+
 nav img {
-  width: 150px;
-  margin-left: 25px;
+  width: 130px;
+  margin-left: 0;
   margin-right: 25px;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 nav p {
@@ -84,6 +91,24 @@ nav p a {
 nav p a:hover {
   color: var(--red);
   transition: 1s all;
+}
+
+nav p.nav-work {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+nav p.nav-about {
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+}
+
+nav p.nav-resume {
+  position: absolute;
+  left: 120px;
+  bottom: 0;
 }
 
 /* HERO IMAGE AREA */
@@ -470,7 +495,11 @@ div.footer div.wrapper div.social a:hover {
   div.hero div.illustration {
     background-position: 68% 50%;
   }
+  nav div.nav-wrapper {
+    margin-left: 5%;
+  }
 }
+
 
 /* MOBILE STYLING */
 
