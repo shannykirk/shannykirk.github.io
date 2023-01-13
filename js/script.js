@@ -4,11 +4,11 @@ $( document ).ready(function() {
 
     $( "div.row a" ).hover(
       function() {
-        $( this ).find("h3").css({
+        $( this ).find("div.hover-type").css({
             opacity: 1,
         });
       }, function() {
-        $( this ).find("h3").css({
+        $( this ).find("div.hover-type").css({
             opacity: 0,
         });
       }
