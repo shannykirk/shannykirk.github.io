@@ -206,19 +206,39 @@ div.row a:hover img {
   opacity: 0.8;
 }
 
-div.row a h3 {
+div.row a div.hover-type {
   position: absolute;
   bottom: 10%;
   left: 10%;
-  text-transform: uppercase;
-  font-family: "Quattrocento Sans";
-  font-weight: bold;
-  font-size: 28px;
-  color: var(--navy);
   width: 80%;
   transition: 1s opacity;
   opacity: 0;
   z-index: 100;
+}
+
+div.row a div.hover-type h3 {
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans";
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: var(--navy);
+}
+
+div.row a div.hover-type h5 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  font-family: Quattrocento Sans;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+div.row a div.hover-type p {
+  color: var(--navy);
+  margin-bottom: 0;
 }
 
 div.row.one {
