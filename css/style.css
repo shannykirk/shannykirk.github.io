@@ -203,7 +203,7 @@ div.row a img {
 
 div.row a:hover img {
   transition: 1s opacity;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 div.row a div.hover-type {
