@@ -156,6 +156,7 @@ div.hero h2 {
 }
 
 div.hero div.see-work-button {
+  z-index: 100;
   transition: 1s all;
   width: 140px;
   padding: 10px;
