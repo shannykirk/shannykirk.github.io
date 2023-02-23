@@ -10,6 +10,7 @@
   --red: #D93D3E;
   --teal: #4D968F;
   --navy:  #142D34;
+  --grey: #6F7D82;
 }
 
 /* GLOBAL STYLING  */
@@ -42,6 +43,20 @@ p a:hover {
 h2 {
   font-size: 30px;
 }
+
+h6 {
+  font-size: 12px;
+ margin-block-start: .5em;
+  margin-block-end: .5em;
+}
+
+h7 {
+  font-size: 17px;
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  color:var(--grey);
+}
+
 
 .mobile-show {
   display: none;
