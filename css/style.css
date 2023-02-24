@@ -86,9 +86,9 @@ nav div.nav-wrapper {
 
 nav img {
   width: 130px;
-  padding-bottom: 500px;
   margin-left: 0;
   margin-right: 25px;
+  margin-bottom: 100px;
   position: absolute;
   top: 5px;
   left: 0;
