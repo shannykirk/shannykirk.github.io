@@ -8,7 +8,7 @@
   --main-bg-color: #FFFFFF;
   --gold:  #DFA549;
   --red: #D93D3E;
-  --teal: #4D968F;
+  --teal: #008A7F;
   --navy:  #142D34;
   --grey: #6F7D82;
 }
@@ -55,6 +55,12 @@ h7 {
   font-family: 'Quattrocento Sans';
   font-weight: bold;
   color:var(--grey);
+}
+
+h8 {
+  font-size: 24px;
+  font-family: 'Quattrocento';
+  margin-top: 40px;
 }
 
 
@@ -345,6 +351,32 @@ div.about div.columns div.experience, div.about div.columns div.awards {
 
 div.about div.columns h5 {
   font-size: 21px;
+}
+
+div.about div.download-resume {
+  z-index: 100;
+  transition: 1s all;
+  width: 200px;
+  padding: 10px;
+  background-color: var(--teal);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans";
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--main-bg-color);
+  letter-spacing: 0.25px;
+  border: 1px solid var(--teal);
+  text-align: center;
+  margin-top: 25px;
+}
+
+div.about div.download-resume:hover {
+  color: var(--teal);
+  transition: 1s all;
+  background-color: transparent;
+  cursor: pointer;
+  cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/325/melting-face_1fae0.png), 4 12, auto;
 }
 
 /* WORK CASE STUDY VIEW */
