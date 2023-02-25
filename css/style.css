@@ -391,12 +391,12 @@ div.work.hide {
 div.work-expanded {
   height: auto;
   width: 100%;
-  position: absolute;
+  /*position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -1;*/
   background: var(--main-bg-color);
-  display: none;
+  /*display: none;*/
 }
 
 div.work-expanded div.wrapper {
@@ -502,11 +502,21 @@ div.work-expanded div.wrapper p.back {
   margin-top: 40px;
 }
 
+div.work-expanded div.wrapper p.back a{
+  color: var(--main-bg-color);
+  text-decoration-color: none;
+  border-bottom: none;
+}
+
 div.work-expanded div.wrapper p.back:hover {
   color: var(--teal);
   transition: 1s all;
   background-color: transparent;
   cursor: pointer;
+}
+
+div.work-expanded div.wrapper p.back:hover a {
+  color: var(--teal);
 }
 
 /* FOOTER SECTION */

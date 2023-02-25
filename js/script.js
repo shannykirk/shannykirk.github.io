@@ -15,27 +15,27 @@ $( document ).ready(function() {
     );
 
     // show and hide the expanded views
-    $( "div.row a" ).each(function() {
-        $(this).click(function() {
-            var getClass = this.className.toString();
-            var projectExpanded = $("div.work-expanded." + getClass);
-            $(projectExpanded).fadeIn(1000);
-            $("div.work").fadeOut(10);
-            $("div.about").fadeOut(10);
-            $("div.hero").fadeOut(10);
-            $("div.footer").fadeOut(10);
-        });
-    });
+    // $( "div.row a" ).each(function() {
+    //     $(this).click(function() {
+    //         var getClass = this.className.toString();
+    //         var projectExpanded = $("div.work-expanded." + getClass);
+    //         $(projectExpanded).fadeIn(1000);
+    //         $("div.work").fadeOut(10);
+    //         $("div.about").fadeOut(10);
+    //         $("div.hero").fadeOut(10);
+    //         $("div.footer").fadeOut(10);
+    //     });
+    // });
 
-    $( "p.back" ).each(function() {
-        $(this).click(function() {
-            $("div.work-expanded").fadeOut(1000);
-            $("div.work").fadeIn(1000);
-            $("div.about").fadeIn(1000);
-            $("div.hero").fadeIn(1000);
-            $("div.footer").fadeIn(1000);
-        });
-    });
+    // $( "p.back" ).each(function() {
+    //     $(this).click(function() {
+    //         $("div.work-expanded").fadeOut(1000);
+    //         $("div.work").fadeIn(1000);
+    //         $("div.about").fadeIn(1000);
+    //         $("div.hero").fadeIn(1000);
+    //         $("div.footer").fadeIn(1000);
+    //     });
+    // });
 
     // scroll from hero to work
     // can change duration by editing the number below _ 1000 = 1 secondx
