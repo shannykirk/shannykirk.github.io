@@ -613,7 +613,7 @@ div.footer div.wrapper div.social a:hover {
 
 /* TABLET STYLING */
 
-@media only screen and (max-width: 1430px) and (min-width: 1001px) {
+@media only screen and (max-width: 1420px) and (min-width: 1001px) {
   div.hero div.intro-type {
     left: 5%;
     max-width: 290px;
