@@ -50,14 +50,7 @@ h6 {
   margin-block-end: .5em;
 }
 
-h7 {
-  font-size: 17px;
-  font-family: 'Quattrocento Sans';
-  font-weight: bold;
-  color:var(--grey);
-}
-
-h8 {
+h4 {
   font-size: 24px;
   font-family: 'Quattrocento';
   margin-top: 40px;
@@ -84,24 +77,24 @@ nav {
 }
 
 nav div.nav-wrapper {
-  max-width: 500px;
   position: relative;
   margin-left: 10%;
   height: 100%;
+  display: flex;
 }
 
 nav img {
-  width: 130px;
+  width: 100px;
+  margin-top: 15px;
   margin-left: 0;
   margin-right: 25px;
   margin-bottom: 100px;
-  position: absolute;
-  top: 5px;
-  left: 0;
 }
 
 nav p {
   font-weight: 700;
+  margin-right: 20px;
+  margin-top: 48px;
 }
 
 nav p a {
@@ -113,24 +106,6 @@ nav p a {
 nav p a:hover {
   color: var(--red);
   transition: 1s all;
-}
-
-nav p.nav-work {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-nav p.nav-about {
-  position: absolute;
-  left: 60px;
-  bottom: 0;
-}
-
-nav p.nav-resume {
-  position: absolute;
-  left: 120px;
-  bottom: 0;
 }
 
 /* HERO IMAGE AREA */
@@ -169,6 +144,10 @@ div.hero h1 {
   margin: 0;
   font-size: 60px;
   font-weight: normal;
+  background: rgb(0,87,80);
+  background: linear-gradient(0deg, rgba(0,87,80,1) 0%, rgba(0,112,103,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 div.hero h2 {
@@ -342,7 +321,6 @@ div.about div.text.wrapper {
 div.about div.columns {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 div.about div.columns div.experience, div.about div.columns div.awards {
@@ -350,7 +328,20 @@ div.about div.columns div.experience, div.about div.columns div.awards {
 }
 
 div.about div.columns h5 {
-  font-size: 21px;
+  font-size: 15px;
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  color:var(--grey);
+  margin-bottom: 5px;
+}
+
+div.about h4 {
+  margin-bottom: 0px;
+}
+
+div.about div.columns p {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 div.about div.download-resume {
@@ -371,12 +362,24 @@ div.about div.download-resume {
   margin-top: 25px;
 }
 
+div.about div.download-resume a {
+  text-decoration: none;
+  color: var(--main-bg-color);
+  transition: 1s all;
+}
+
 div.about div.download-resume:hover {
   color: var(--teal);
   transition: 1s all;
   background-color: transparent;
   cursor: pointer;
   cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/325/melting-face_1fae0.png), 4 12, auto;
+}
+
+div.about div.download-resume a:hover {
+  text-decoration: none;
+  color: var(--teal);
+  transition: 1s all;
 }
 
 /* WORK CASE STUDY VIEW */
@@ -477,6 +480,33 @@ div.work-expanded div.wrapper div.process h5 {
   margin-bottom: 8px;
 }
 
+div.work-expanded div.wrapper div.process.other-work {
+  text-align: center;
+}
+
+div.work-expanded div.wrapper div.process div.link-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+div.work-expanded div.wrapper div.process div.link-wrapper a {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 1;
+  font-size: 24px;
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--grey);
+  transition: 1s all;
+  margin-top: 25px;
+}
+
+div.work-expanded div.wrapper div.process div.link-wrapper a:hover {
+  color: var(--navy);
+  transition: 1s all;
+}
+
 div.work-expanded div.wrapper div.process h3 {
   width: 85%;
   margin: 0 auto;
@@ -519,6 +549,17 @@ div.work-expanded div.wrapper p.back:hover a {
   color: var(--teal);
 }
 
+.vl {
+  margin: 25px;
+  margin-left: 100px;
+  border-left: 1px solid var(--teal);
+  WIDTH: 100%;
+  max-width: 500px;
+  padding-left: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 /* FOOTER SECTION */
 div.footer {
   width: 100%;
@@ -551,6 +592,7 @@ div.footer div.wrapper div.social {
   font-size: 25px;
   text-align: center;
   justify-content: center;
+  margin-top: 15px;
 }
 
 div.footer div.wrapper div.social i {
@@ -600,22 +642,24 @@ div.footer div.wrapper div.social a:hover {
     top: 0;
     width: 100%;
     height: 75px;
-    display:  flex;
     z-index: 10000000;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     background: var(--main-bg-color);
   }
 
+  nav div.nav-wrapper {
+    max-width: 351px;
+    margin: 0 auto;
+  }
+
   nav img {
-    width: 60px;
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 65px;
+    margin-left: 0;
   }
 
   nav p {
     font-weight: 700;
+    margin-top: 35px;
   }
 
   nav p a {
