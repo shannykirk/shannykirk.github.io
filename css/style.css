@@ -121,7 +121,7 @@ div.hero div.illustration {
   width: 100%;
   height: 100vh;
   min-height: 900px;
-  background: url(https://raw.githubusercontent.com/shannykirk/shannykirk.github.io/main/images/Untitled_Artwork%2053.png);
+  background: url(https://github.com/shannykirk/shannykirk.github.io/blob/main/images/Hero%20Image%20DRAFT.png?raw=true);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -310,6 +310,7 @@ div.about {
 }
 
 div.about img {
+  margin-top: 30px;
   width: 48%;
   /* align-self: center; */
 }
