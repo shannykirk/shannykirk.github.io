@@ -319,6 +319,20 @@ div.about div.text.wrapper {
   width: 48%;
 }
 
+div.about div.text.wrapper h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.about div.text.wrapper h5 {
+  font-size: 15px;
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  color:var(--grey);
+  margin-bottom: 5px;
+}
+
 div.about div.columns {
   display: flex;
   justify-content: space-between;
