@@ -163,6 +163,8 @@ div.hero h1 {
 
 div.hero h2 {
   margin-bottom: 20px;
+  width: 475px;
+  line-height: 1.4;
   font-family: "Quattrocento Sans";
   font-weight: normal;
   font-size: 18px;
