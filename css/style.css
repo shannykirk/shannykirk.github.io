@@ -163,7 +163,7 @@ div.hero h1 {
 
 div.hero h2 {
   margin-bottom: 20px;
-  width: 475px;
+  max-width: 475px;
   line-height: 1.4;
   font-family: "Quattrocento Sans";
   font-weight: normal;
@@ -697,9 +697,11 @@ div.footer div.wrapper div.social a:hover {
   div.hero {
     margin-top: 75px;
     min-height: 100vh;
+    height: auto;
   }
   div.hero div.see-work-button {
     margin: 0 auto;
+    z-index: 100;
   }
   div.work {
     width: 90%;
@@ -740,7 +742,7 @@ div.footer div.wrapper div.social a:hover {
     left: auto;
     margin: 0 auto;
     top: auto;
-    padding-top: 8vh;
+    padding-top: 20vh;
     text-align: center;
   }
   div.hero div.illustration {
@@ -748,12 +750,13 @@ div.footer div.wrapper div.social a:hover {
     top: auto;
     left: auto;
     margin: 0 auto;
-    margin-top: 50px;
-    height: 50vh;
+    margin-top: -50px;
+    height: 85vh;
     min-height: auto;
-    background-position: 85% 50%;
-    max-width: 400px;
-    background: url(https://github.com/shannykirk/shannykirk.github.io/blob/main/images/Updated%20MOBILE%20Hero%20Image%20Illustration.png?raw=true);
+    background-position: 100% 0%;
+    /*max-width: 400px;*/
+    background: url('https://github.com/shannykirk/shannykirk.github.io/blob/main/images/Updated%20MOBILE%20Hero%20Image%20Illustration.png?raw=true');
+    background-size: cover;
   }
 
   div.hero h1 {
