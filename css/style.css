@@ -318,7 +318,7 @@ div.about {
   transition: 3s all;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
   align-items: flex-start;
 }
 
@@ -332,16 +332,16 @@ div.about div.text.wrapper {
   width: 48%;
 }
 
-div.about div.columns {
-  display: flex;
-  justify-content: space-between;
+div.about h2 {
+  margin-top: 2px;
+  margin-bottom: 10px;
 }
 
-div.about div.columns div.experience, div.about div.columns div.awards {
-  width: 45%;
+div.about h4 {
+  margin-bottom: 0px;
 }
 
-div.about div.columns h5 {
+div.about h5 {
   font-size: 15px;
   font-family: 'Quattrocento Sans';
   font-weight: bold;
@@ -349,16 +349,59 @@ div.about div.columns h5 {
   margin-bottom: 5px;
 }
 
-div.about h4 {
-  margin-bottom: 0px;
-}
-
 div.about div.columns p {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-div.about div.download-resume {
+
+/* RESUME/EXPERIENCE SECTION */
+div.resume {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  transition: 3s all;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  align-items: flex-start;
+}
+
+div.resume div.row {
+  table-layout: fixed ;
+  width: 100% ;
+}
+
+div.resume div.column {
+  float: left;
+  width: 26.66%;
+  margin: 30px;
+}
+
+/* Clear floats after the columns */
+div.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  table-layout: fixed;
+}
+
+div.resume div.column h5 {
+  font-size: 15px;
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  color:var(--grey);
+  margin-bottom: 5px;
+}
+
+div.resume div.column p {
+  line-height: .8;
+}
+
+div.resume div.download-resume {
   z-index: 100;
   transition: 1s all;
   width: 230px;
@@ -376,13 +419,13 @@ div.about div.download-resume {
   margin-top: 25px;
 }
 
-div.about div.download-resume a {
+div.resume div.download-resume a {
   text-decoration: none;
   color: var(--main-bg-color);
   transition: 1s all;
 }
 
-div.about div.download-resume:hover {
+div.resume div.download-resume:hover {
   color: var(--teal);
   transition: 1s all;
   background-color: transparent;
@@ -390,11 +433,13 @@ div.about div.download-resume:hover {
   cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/325/melting-face_1fae0.png), 4 12, auto;
 }
 
-div.about div.download-resume a:hover {
+div.resume div.download-resume a:hover {
   text-decoration: none;
   color: var(--teal);
   transition: 1s all;
 }
+
+
 
 /* WORK CASE STUDY VIEW */
 
@@ -777,6 +822,11 @@ div.footer div.wrapper div.social a:hover {
     width: 110%;
     margin-left: -5%;
   }
+
+  div.column {
+    width: 100%;
+  }
+
 
 
 }
