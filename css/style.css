@@ -306,6 +306,25 @@ div.row.three a img {
   width: 100%;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.imagecolumn {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.imagerow {
+  width: 85%;
+  margin-left: 80px;
+}
+
+/* Clear floats after image containers */
+.imagerow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ABOUT SECTION */
 div.about {
   width: 80%;
