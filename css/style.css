@@ -420,6 +420,10 @@ div.resume div.column p {
   line-height: .8;
 }
 
+div.resume div.column div.timeline p {
+  line-height: .3;
+}
+
 div.resume div.download-resume {
   z-index: 100;
   transition: 1s all;
