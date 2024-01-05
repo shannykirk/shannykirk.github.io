@@ -173,25 +173,27 @@ div.hero h2 {
   font-size: 18px;
 }
 
-div.hero div.see-work-button {
+button {
+  text-decoration: none;
+  background-color: var(--teal);
+  color: var(--main-bg-color);
   z-index: 100;
   transition: 1s all;
   width: 140px;
   padding: 10px;
-  background-color: var(--teal);
   border-radius: 20px;
   text-transform: uppercase;
   font-family: "Quattrocento Sans";
   font-weight: bold;
   font-size: 16px;
-  color: var(--main-bg-color);
   letter-spacing: 0.25px;
   border: 1px solid var(--teal);
   text-align: center;
 }
 
-div.hero div.see-work-button:hover {
+button:hover {
   color: var(--teal);
+  text-decoration: none;
   transition: 1s all;
   background-color: transparent;
   cursor: pointer;
