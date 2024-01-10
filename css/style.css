@@ -237,6 +237,10 @@ div.row a div.hover-type {
   z-index: 100;
 }
 
+div.row a:hover div.hover-type {
+  opacity: 1;
+}
+
 div.row a div.hover-type h3 {
   text-transform: uppercase;
   font-family: "Quattrocento Sans";
@@ -570,7 +574,6 @@ div.work-expanded {
   top: 0;
   z-index: -1;*/
   background: var(--main-bg-color);
-  /*display: none;*/
 }
 
 div.work-expanded div.wrapper {
@@ -636,7 +639,6 @@ div.work-expanded div.wrapper p.details span:last-child {
 div.work-expanded div.wrapper div.process {
   text-align: left;
   margin-top: 50px;
-
 }
 
 div.work-expanded div.wrapper div.process h5 {
