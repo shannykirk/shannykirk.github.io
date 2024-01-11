@@ -278,17 +278,25 @@ div.row.one img {
 
 div.row.two {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px;
+  margin-bottom: 15px;
+  /* display: flex;
   width: 100%;
   margin-bottom: 30px;
   justify-content: space-between;
-  align-self: center;
+  align-self: center; */
 }
 
 div.row.two a {
-  display: block;
+  width: calc(50% - 30px); /* Adjust the width to include the spacing */
+  margin: 15px; /* Adjust the margin to control the spacing between images */
+  box-sizing: border-box;
+  /* display: block;
   width: 48%;
   align-self: center;
-  position: relative;
+  position: relative; */
 }
 
 div.row.two a img {
@@ -298,17 +306,25 @@ div.row.two a img {
 
 div.row.three {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -15px;
+  margin-bottom: 15px;
+  /* display: flex;
   width: 100%;
   margin-bottom: 30px;
   justify-content: space-between;
-  align-self: center;
+  align-self: center; */
 }
 
 div.row.three a {
-  display: block;
+  width: calc(33.33% - 30px); /* Adjust the width to include the spacing */
+  margin: 15px; /* Adjust the margin to control the spacing between images */
+  box-sizing: border-box;
+  /* display: block;
   width: 31%;
   align-self: center;
-  position: relative;
+  position: relative; */
 }
 
 div.row.three a img {
